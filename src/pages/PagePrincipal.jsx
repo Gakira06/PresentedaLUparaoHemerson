@@ -517,7 +517,7 @@ export default function PagePrincipal() {
             </>
           )} */}
 
-          {secaoLiberada >= 6 && (
+          {secaoLiberada >= 4 && (
             <section
               ref={momentosRef}
               className="w-full max-w-sm mb-16 reveal-section"
