@@ -262,7 +262,7 @@ export default function PagePrincipal() {
 
           <div className="flex items-center gap-2 text-pink-300 text-sm mb-10">
             <Calendar className="w-4 h-4" />
-            <span>Brigando desde 7 de novembro de 2025</span>
+            <span>Juntos desde 14 de fevereiro de 2026</span>
           </div>
 
           <div className="flex gap-4 mb-8">
