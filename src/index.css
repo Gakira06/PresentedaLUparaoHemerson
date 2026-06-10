@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+.photo-strip {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(236, 72, 153, 0.85) transparent;
+}
+
+.photo-strip::-webkit-scrollbar {
+  height: 8px;
+}
+
+.photo-strip::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.photo-strip::-webkit-scrollbar-thumb {
+  background: rgba(236, 72, 153, 0.85);
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.photo-strip::-webkit-scrollbar-thumb:hover {
+  background: rgba(236, 72, 153, 1);
+}
+
+.reveal-section {
+  animation: reveal-section 0.65s ease both;
+}
+
+.list-item-reveal {
+  animation: list-item-reveal 0.35s ease both;
+}
+
+.heart-pop {
+  pointer-events: none;
+  animation: heart-pop 0.95s ease-out forwards;
+}
+
+.main-heart {
+  position: relative;
+}
+
+.main-heart::before,
+.main-heart::after {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  border: 1px solid rgba(244, 114, 182, 0.28);
+  border-radius: 9999px;
+  animation: love-ring 2.8s ease-out infinite;
+}
+
+.main-heart::after {
+  animation-delay: 1.35s;
+}
+
+.floating-decor {
+  opacity: 0;
+  filter: drop-shadow(0 0 10px rgba(244, 114, 182, 0.45));
+  transform: translate3d(-50%, 0, 0);
+  animation: floating-decor 9s ease-in-out infinite;
+}
+
+@keyframes reveal-section {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+    filter: blur(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes list-item-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes love-ring {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.45);
+  }
+}
+
+@keyframes floating-decor {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, 18px, 0) scale(0.8) rotate(-8deg);
+  }
+
+  18%,
+  82% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate3d(calc(-50% + 14px), -18px, 0) scale(1.08)
+      rotate(10deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(-50%, -38px, 0) scale(0.85) rotate(-6deg);
+  }
+}
+
+@keyframes heart-pop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 10px) scale(0.6) rotate(0deg);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -90px) scale(1.6) rotate(24deg);
+  }
+}
