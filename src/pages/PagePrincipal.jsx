@@ -26,7 +26,7 @@ const SPOTIFY_TRACK_ID = "3eBjtEPgx1Z2O5ILHdEoJ7";
 const FOTOS_INICIAIS = [
   {
     src: firstPhoto,
-    legenda: "Noite especial — nosso primeiro registro juntos",
+    legenda: "Noite especial",
   },
   {
     src: ecaa,
@@ -54,7 +54,7 @@ const FOTOS_INICIAIS = [
   },
   {
     src: ibira1,
-    legenda: "Passeio no Ibira — lembrança boa",
+    legenda: "show",
   },
   {
     src: ibira2,
