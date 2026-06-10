@@ -20,49 +20,50 @@ import ibira1 from "../assets/ibira1.png";
 import ibira2 from "../assets/ibira2.png";
 import foto10 from "../assets/10.png";
 
-const START_DATE = new Date("2025-11-07T00:00:00");
-const SPOTIFY_TRACK_ID = "3eBjtEPgx1Z2O5ILHdEoJ7";
+const START_DATE = new Date("2026-02-14T00:00:00");
+const SPOTIFY_TRACK_ID = "3MZasYL4eB4Tm2U2LZ58tj";
 
 const FOTOS_INICIAIS = [
   {
+    src: shopping,
+    legenda: "Nossa primeira foto",
+  },
+  {
     src: firstPhoto,
-    legenda: "Noite especial",
+    legenda: "",
   },
   {
     src: ecaa,
-    legenda: "Look branco — selfie fofa",
+    legenda: "",
   },
   {
     src: fofoo,
-    legenda: "Beijo no show — momento inesquecível",
+    legenda: "",
   },
   {
     src: dead1,
-    legenda: "Noite divertida — risadas e caretas",
+    legenda: "",
   },
   {
     src: dead2,
-    legenda: "Make perfeita — close de beijo",
+    legenda: "",
   },
   {
     src: diaNaoTaoBom,
-    legenda: "Cenas de carinho — sempre juntos",
+    legenda: "",
   },
-  {
-    src: shopping,
-    legenda: "Dia de parque — roda-gigante e sol",
-  },
+
   {
     src: ibira1,
-    legenda: "show",
+    legenda: "",
   },
   {
     src: ibira2,
-    legenda: "Tarde de diversão — jogos e risos",
+    legenda: "",
   },
   {
     src: foto10,
-    legenda: "Cantinho das nossas caretas",
+    legenda: "",
   },
 ];
 
@@ -256,7 +257,7 @@ export default function PagePrincipal() {
           <h1 className="text-center text-white font-bold font-serif text-5xl mb-6">
             Para meu
             <br />
-            Príncipe
+            Amor
           </h1>
 
           <div className="flex items-center gap-2 text-pink-300 text-sm mb-10">

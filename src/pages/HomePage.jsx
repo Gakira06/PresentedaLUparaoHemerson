@@ -37,7 +37,7 @@ export default function HomePage() {
               Nosso começo
             </p>
             <h2 className="text-2xl font-semibold text-white sm:text-3xl">
-              7 de novembro de 2025
+              14 de fevereiro de 2026
             </h2>
             <p className="mt-3 text-sm text-pink-100/80 leading-6">
               Cada dia juntos é uma nova lembrança. Essa surpresa é para lembrar
