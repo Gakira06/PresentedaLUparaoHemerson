@@ -304,7 +304,7 @@ export default function PagePrincipal() {
               <strong className="text-white text-base">
                 {totalDiasJuntos()}
               </strong>{" "}
-              dias de brigaa
+              dias de paz, amor e parceria. Obrigado por cada momento ao seu lado.
             </span>
             <span className="text-pink-400">✦</span>
           </div>
